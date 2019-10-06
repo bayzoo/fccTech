@@ -88,12 +88,12 @@ li {
 /*main styles*/
 #main-section {
   background-color: #DCDEE6;
-  position: relative;
+  width: auto;
   box-sizing: border-box;
   padding: 1em;
   margin: 5em 0 1em 13em;
   border: 0.1em solid black;
-  z-index: 2;
+  overflow-x: hidden;
 }
 .heading {
 
