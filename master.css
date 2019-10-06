@@ -1,0 +1,115 @@
+/*master css file*/
+/*zero out*/
+*, html {
+  margin: 0;
+  padding: 0;
+}
+/*global styles*/
+body {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 16px;
+}
+p {
+  font-size: 1em;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.6em;
+}
+li {
+  list-style: none;
+}
+/*core layout*/
+#header-container {
+  width: 100%;
+  background-color: green;
+  display: flex;
+  height: 4em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid black;
+}
+#main-container {
+  width: 100%;
+}
+/*header styles*/
+#header-container h1 {
+  margin-right: 0.5em;
+}
+#header-container img {
+
+}
+/*navigation styles*/
+#nav-bar {
+  background-color: pink;
+  width: 12em;
+  max-height: calc(100% - 5em);
+  box-sizing: border-box;
+  margin: 0 1em 1em 0;
+  position: fixed;
+  top: 5em;
+  z-index: 1;
+  border: 0.1em solid black;
+  overflow-y: auto;
+}
+#nav-bar ul {
+  height: 100%;
+  margin: 0.5em auto;
+  padding: 0 0.5em;
+}
+#nav-bar li {
+  position: relative;
+}
+#nav-bar a {
+  background-color: yellow;
+  color: inherit;
+  display: block;
+  border: 0.1em solid black;
+  margin: 0.5em auto;
+  text-decoration: none;
+  padding: 0.5em;
+}
+#nav-bar a:hover {
+  color: #ffffff;
+  background-color: blue;
+}
+/*main styles*/
+#main-section {
+  background-color: #DCDEE6;
+  position: relative;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 5em 0 1em 13em;
+  border: 0.1em solid black;
+  z-index: 2;
+}
+.heading {
+
+}
+#main-section p {
+
+}
+/*phone size media query*/
+@media only screen and (max-width: 414px) {
+  #nav-bar {
+    display: none;
+  }
+  #main-section {
+    margin: 5em 0 1em 0;
+  }
+}
+@media only screen and (max-width: 360px) {
+
+  }
