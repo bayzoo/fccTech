@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="master.css">
-    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <title>JavaScript | freecodecamp.org "Build a Technical Documentation Page" project</title>
   </head>
   <body>
@@ -35,7 +35,7 @@
       </nav>
       <main id="main-section">
         <section class="main-section" id="Introduction">
-          <h2 class="heading">Introduction</h2>
+          <h3 class="heading">Introduction</h3>
           <article>
             <p>
               JavaScript is a cross-platform, object-oriented scripting language. It
@@ -43,7 +43,6 @@
               example, a web browser), JavaScript can be connected to the objects of
               its environment to provide programmatic control over them.
             </p>
-
             <p>
               JavaScript contains a standard library of objects, such as Array, Date,
               and Math, and a core set of language elements such as operators, control
@@ -70,10 +69,9 @@
           </article>
         </section>
         <section class="main-section" id="What_you_should_already_know">
-          <h2 class="heading">What you should already know</h2>
+          <h3 class="heading">What you should already know</h3>
           <article>
             <p>This guide assumes you have the following basic background:</p>
-
             <ul>
               <li>
                 A general understanding of the Internet and the World Wide Web (WWW).
@@ -87,7 +85,7 @@
           </article>
         </section>
         <section class="main-section" id="JavaScript_and_Java">
-          <h2 class="heading">JavaScript and Java</h2>
+          <h3 class="heading">JavaScript and Java</h3>
           <article>
             <p>
               JavaScript and Java are similar in some ways but fundamentally different
@@ -97,7 +95,6 @@
               constructs which was the reason why it was renamed from LiveScript to
               JavaScript.
             </p>
-
             <p>
               In contrast to Java's compile-time system of classes built by
               declarations, JavaScript supports a runtime system based on a small
@@ -119,40 +116,39 @@
           </article>
         </section>
         <section class="main-section" id="Hello_world">
-          <h2 class="heading">Hello world</h2>
+          <h3 class="heading">Hello world</h3>
           <article>
             To get started with writing JavaScript, open the Scratchpad and write your
             first "Hello world" JavaScript code:
-            <code
-              >function greetMe(yourName) { alert("Hello " + yourName); }
-              greetMe("World");
-            </code>
-
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                  greetMe("World");</code>
             Select the code in the pad and hit Ctrl+R to watch it unfold in your
             browser!
           </article>
         </section>
         <section class="main-section" id="Variables">
-          <h2 class="heading">Variables</h2>
-          <p>
-            You use variables as symbolic names for values in your application. The
-            names of variables, called identifiers, conform to certain rules.
-          </p>
-          <p>
-            A JavaScript identifier must start with a letter, underscore (_), or
-            dollar sign ($); subsequent characters can also be digits (0-9). Because
-            JavaScript is case sensitive, letters include the characters "A" through
-            "Z" (uppercase) and the characters "a" through "z" (lowercase).
-          </p>
-          <p>
-            You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-            You can also use the Unicode escape sequences as characters in
-            identifiers. Some examples of legal names are Number_hits, temp99, and
-            _name.
-          </p>
+          <h3 class="heading">Variables</h3>
+          <article>
+            <p>
+              You use variables as symbolic names for values in your application. The
+              names of variables, called identifiers, conform to certain rules.
+            </p>
+            <p>
+              A JavaScript identifier must start with a letter, underscore (_), or
+              dollar sign ($); subsequent characters can also be digits (0-9). Because
+              JavaScript is case sensitive, letters include the characters "A" through
+              "Z" (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+            <p>
+              You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
+              You can also use the Unicode escape sequences as characters in
+              identifiers. Some examples of legal names are Number_hits, temp99, and
+              _name.
+            </p>
+          </article>
         </section>
         <section class="main-section" id="Declaring_variables">
-          <h2 class="heading">Declaring variables</h2>
+          <h3 class="heading">Declaring variables</h3>
           <article>
             You can declare a variable in three ways:
             <p>
@@ -172,7 +168,7 @@
           </article>
         </section>
         <section class="main-section" id="Variable_scope">
-          <h2 class="heading">Variable scope</h2>
+          <h3 class="heading">Variable scope</h3>
           <article>
             <p>
               When you declare a variable outside of any function, it is called a
@@ -181,7 +177,6 @@
               called a local variable, because it is available only within that
               function.
             </p>
-
             <p>
               JavaScript before ECMAScript 2015 does not have block statement scope;
               rather, a variable declared within a block is local to the function (or
@@ -203,14 +198,13 @@
           </article>
         </section>
         <section class="main-section" id="Global_variables">
-          <h2 class="heading">Global variables</h2>
+          <h3 class="heading">Global variables</h3>
           <article>
             <p>
               Global variables are in fact properties of the global object. In web
               pages the global object is window, so you can set and access global
               variables using the window.variable syntax.
             </p>
-
             <p>
               Consequently, you can access global variables declared in one window or
               frame from another window or frame by specifying the window or frame
@@ -221,7 +215,7 @@
           </article>
         </section>
         <section class="main-section" id="Constants">
-          <h2 class="heading">Constants</h2>
+          <h3 class="heading">Constants</h3>
           <article>
             <p>
               You can create a read-only, named constant with the const keyword. The
@@ -229,24 +223,20 @@
               identifier: it must start with a letter, underscore or dollar sign and
               can contain alphabetic, numeric, or underscore characters.
             </p>
-
             <code>const PI = 3.14;</code>
             <p>
               A constant cannot change value through assignment or be re-declared
               while the script is running. It has to be initialized to a value.
             </p>
-
             <p>
               The scope rules for constants are the same as those for let block scope
               variables. If the const keyword is omitted, the identifier is assumed to
               represent a variable.
             </p>
-
             <p>
               You cannot declare a constant with the same name as a function or
               variable in the same scope. For example:
             </p>
-
             <code
               >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
               CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
@@ -260,7 +250,7 @@
           </article>
         </section>
         <section class="main-section" id="Data_types">
-          <h2 class="heading">Data types</h2>
+          <h3 class="heading">Data types</h3>
           <article>
             <p>The latest ECMAScript standard defines seven data types:</p>
             <ul>
@@ -293,7 +283,7 @@
           </article>
         </section>
         <section class="main-section" id="if...else_statement">
-          <h2 class="heading">if...else statement</h2>
+          <h3 class="heading">if...else statement</h3>
           <article>
             Use the if statement to execute a statement if a logical condition is
             true. Use the optional else clause to execute a statement if the condition
@@ -335,7 +325,7 @@
           </article>
         </section>
         <section class="main-section" id="while_statement">
-          <h2 class="heading">while statement</h2>
+          <h3 class="heading">while statement</h3>
           <article>
             A while statement executes its statements as long as a specified condition
             evaluates to true. A while statement looks as follows:
@@ -378,7 +368,7 @@
           </article>
         </section>
         <section class="main-section" id="Function_declarations">
-          <h2 class="heading">Function declarations</h2>
+          <h3 class="heading">Function declarations</h3>
           <article>
             A function definition (also called a function declaration, or function
             statement) consists of the function keyword, followed by:
@@ -415,7 +405,7 @@
           </article>
         </section>
         <section class="main-section" id="Reference">
-          <h2 class="heading">Reference</h2>
+          <h3 class="heading">Reference</h3>
           <article>
             <ul>
               <li>

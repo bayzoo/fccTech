@@ -6,20 +6,26 @@
 }
 /*global styles*/
 body {
-  font-family: Arial, Verdana, sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
+  color: #252827;
+  background-color: #F8EA8C;
 }
 p {
   font-size: 1em;
+  margin: 1em 0;
+  line-height: 1.2;
 }
 h1 {
   font-size: 3em;
+  color: #F0F2F3;
 }
 h2 {
   font-size: 2em;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
+  margin: 0.5em 0;
 }
 h4 {
   font-size: 1.6em;
@@ -30,7 +36,7 @@ li {
 /*core layout*/
 #header-container {
   width: 100%;
-  background-color: green;
+  background-color: #003366;
   display: flex;
   height: 4em;
   position: fixed;
@@ -39,7 +45,6 @@ li {
   z-index: 3;
   justify-content: center;
   align-items: center;
-  border: 0.1em solid black;
 }
 #main-container {
   width: 100%;
@@ -53,16 +58,17 @@ li {
 }
 /*navigation styles*/
 #nav-bar {
-  background-color: pink;
+  background-color: #71B1C5;
   width: 12em;
-  max-height: calc(100% - 5em);
+  max-height: calc(100vh - 6em);
   box-sizing: border-box;
   margin: 0 1em 1em 0;
   position: fixed;
   top: 5em;
+  left: 0.5em;
   z-index: 1;
-  border: 0.1em solid black;
   overflow-y: auto;
+  border-radius: 0.5em
 }
 #nav-bar ul {
   height: 100%;
@@ -73,33 +79,50 @@ li {
   position: relative;
 }
 #nav-bar a {
-  background-color: yellow;
-  color: inherit;
+  background-color: #CBE6EF;
+  color: #551A8B;
   display: block;
-  border: 0.1em solid black;
+  border-radius: 0.5em;
   margin: 0.5em auto;
   text-decoration: none;
   padding: 0.5em;
+  cursor: pointer;
 }
 #nav-bar a:hover {
-  color: #ffffff;
-  background-color: blue;
+  background-color: #F0F2F3;
 }
 /*main styles*/
 #main-section {
-  background-color: #DCDEE6;
+  background-color: #CBE6EF;
   width: auto;
   box-sizing: border-box;
   padding: 1em;
   margin: 5em 0 1em 13em;
-  border: 0.1em solid black;
+  border-radius: 0.5em;
   overflow-x: hidden;
 }
-.heading {
-
+section article {
+  margin: 1em;
+  font-size: 0.96em;
 }
-#main-section p {
+section ul {
+  margin: 1em 0 1em 1em;
+}
+section li {
+  margin: 0.6em 0 0 1.1em;
+  list-style: circle;
+}
 
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2;
+  background-color: #F0F2F3;
+  padding: 0.8em;
+  margin: 0.6em;
+  word-break: normal;
+  word-wrap: normal;
 }
 /*phone size media query*/
 @media only screen and (max-width: 414px) {
