@@ -57,7 +57,7 @@ li {
 
 }
 /*navigation styles*/
-#nav-bar {
+#navbar {
   background-color: #71B1C5;
   width: 12em;
   max-height: calc(100vh - 6em);
@@ -70,15 +70,15 @@ li {
   overflow-y: auto;
   border-radius: 0.5em
 }
-#nav-bar ul {
+#navbar ul {
   height: 100%;
   margin: 0.5em auto;
   padding: 0 0.5em;
 }
-#nav-bar li {
+#navbar li {
   position: relative;
 }
-#nav-bar a {
+#navbar a {
   background-color: #CBE6EF;
   color: #551A8B;
   display: block;
@@ -88,7 +88,7 @@ li {
   padding: 0.5em;
   cursor: pointer;
 }
-#nav-bar a:hover {
+#navbar a:hover {
   background-color: #F0F2F3;
 }
 /*main styles*/
@@ -103,7 +103,6 @@ li {
 }
 section article {
   margin: 1em;
-  font-size: 0.96em;
 }
 section ul {
   margin: 1em 0 1em 1em;
@@ -123,10 +122,15 @@ code {
   margin: 0.6em;
   word-break: normal;
   word-wrap: normal;
+  overflow-x: scroll;
+}
+footer {
+  text-align: center;
+  font-size: 0.8em;
 }
 /*phone size media query*/
 @media only screen and (max-width: 414px) {
-  #nav-bar {
+  #navbar {
     display: none;
     -webkit-overflow-scrolling: touch;
   }
